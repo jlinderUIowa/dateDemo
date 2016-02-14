@@ -15,14 +15,19 @@
     
     <%
         Date today = new Date();
+        
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
         String ddMMyyyyToday = dateFormat.format(today);
+        
+        SimpleDateFormat dateFormatUS = new SimpleDateFormat("MM/DD/yyyy");
+        String MMddyyyyToday = dateFormatUS.format(today);
     %>
     <body>
         
         <h1>Hello World!</h1>
         <p> Today is: <%= today %>
-        <p> Today is: <%= ddMMyyyyToday %>    
+        <p> Today is: <%= ddMMyyyyToday %>  
+        <p> Today is: <%= MMddyyyyToday %>
             
     </body>
 </html>
